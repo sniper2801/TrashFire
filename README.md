@@ -133,6 +133,7 @@ f157cda0-550c-11e5-a6fa0002a5d5c51b.ta - "OP-TEE sanity testsuite (xtest)" - htt
 
 # What are Trusted Applications?
 
+```
 https://www.ietf.org/proceedings/99/slides/slides-99-edu-sessi-trusted-execution-environments-tee-and-the-open-trust-protocol-otrp-00.pdf
 https://www.owasp.org/images/c/c8/OWASP_Security_Tapas_-_TrustZone%2C_TEE_and_Mobile_Security_final.pdf
 https://www.slideshare.net/linaroorg/hkg15311-optee-for-beginners-and-porting-review
@@ -143,8 +144,9 @@ https://www.slideshare.net/linaroorg/lcu14103-how-to-create-and-run-trusted-appl
 https://www.youtube.com/watch?v=QgaGJow7hws
 https://github.com/OP-TEE/optee_os/commit/d0c636148b3a
 https://github.com/OP-TEE/optee_os/blob/master/documentation/optee_design.md#12-trusted-applications
+```
 
-```There are two ways to implement Trusted Applications (TAs), pseudo TAs and user mode TAs. User mode TAs are full featured Trusted Applications as specified by the GlobalPlatform TEE specifications, these are simply referred to as 'Trusted Applications'. For most cases, user mode TAs are preferred.```
+There are two ways to implement Trusted Applications (TAs), pseudo TAs and user mode TAs. User mode TAs are full featured Trusted Applications as specified by the GlobalPlatform TEE specifications, these are simply referred to as 'Trusted Applications'. For most cases, user mode TAs are preferred.
 
 https://wiki.linaro.org/WorkingGroups/Security/OP-TEE
 # How Are Trusted Applications Verified?
