@@ -214,13 +214,14 @@ We can see this matches the .TZTA files that Donny left behind accidentlly.
 
 NFZ can be similarly extracted
 ```
-dji_fw_verify -n 1105 -c 1105 -o nfz_xxx.db  /vendor/nfz/nfz.fw
+127|root@eagle_wm230:/blackbox/x # dji_fw_verify -n 1105 -c 1105 -o nfz_xxx.db  /vendor/nfz/nfz.fw
 input /vendor/nfz/nfz.fw, name: 1105, chunk_id = 0x35303131, output: nfz_xxx.db
 open session success
  nfz_xxx.db write chunk size:0x2fd000
  buffer=0xb6a02000, size=0x2fd000, count=1
-verify pass nfz_xxx.db```
+verify pass nfz_xxx.db
 
+```
 # TZASC - TrustZone Address Space Controller 
 
 ```
