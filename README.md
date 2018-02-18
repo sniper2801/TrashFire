@@ -59,7 +59,6 @@ https://linux.globallogic.com/materials2017/presentations/Stream%202/Igor%20Opan
 Several OP-TEE releated artifacts can be found on the file system. 
 
 ```
-root@eagle_wm230:/ # busybox find / -name "*tee*"
 /data/tee
 /data/teec.log
 /system/bin/tee
@@ -156,9 +155,9 @@ ta_load >> ta_store->open >> ta_open >> check_shdr >> crypto_ops.acipher.rsassa_
 
 https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/user_ta.c#L261
 ```
- * Loads TA header and hashes.
- * Verifies the TA signature.
- * Returns context ptr and TEE_Result.
+  Loads TA header and hashes.
+  Verifies the TA signature.
+  Returns context ptr and TEE_Result.
 static TEE_Result ta_load(const TEE_UUID uuid,
 			  const struct user_ta_store_ops *ta_store,
 			  struct tee_ta_ctx ta_ctx)
@@ -167,7 +166,6 @@ static TEE_Result ta_load(const TEE_UUID uuid,
 https://github.com/OP-TEE/optee_os/blob/master/core/arch/arm/kernel/ree_fs_ta.c#L100
 ```static TEE_Result ta_open(const TEE_UUID uuid,
 			  struct user_ta_store_handle h)
-          /* Request TA from tee-supplicant */
 ```
 
 https://github.com/OP-TEE/optee_os/blob/master/documentation/optee_design.md#12-trusted-applications
@@ -203,7 +201,8 @@ input /vendor/ta/f157cda0-550c-11e5-a6fa0002a5d5c51b.ta, name: djita, chunk_id =
 open session success
  /blackbox/x/wrekt.ta write chunk size:0x11500
  buffer=0xb6d2e000, size=0x11500, count=1
-verify pass /blackbox/x/wrekt.ta```
+verify pass /blackbox/x/wrekt.ta
+```
 
 We can see this matches the .TZTA files that Donny left behind accidentlly. 
 ```
