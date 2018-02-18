@@ -126,9 +126,11 @@ https://googleprojectzero.blogspot.com/2017/07/trust-issues-exploiting-trustzone
 https://www.cs.ucsb.edu/~vigna/publications/2017_NDSS_Boomerang.pdf (mentioned above)
 
 # Known Trusted Applications. 
+```
 0388301d-7a5b-4153-968c3a668ae6cdd8.ta - "FW UTIL TA"
 5b9e0e40-2636-11e1-ad9e0002a5d5c51b.ta - "Hello world!" https://github.com/OP-TEE/optee_test/blob/master/ta/os_test/os_test.c
 f157cda0-550c-11e5-a6fa0002a5d5c51b.ta - "OP-TEE sanity testsuite (xtest)" - https://github.com/OP-TEE/optee_test
+```
 
 # What are Trusted Applications?
 
