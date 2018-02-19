@@ -247,3 +247,16 @@ verify pass nfz_xxx.db
 /sys/firmware/devicetree/base/tzasc@F0480000/tzasc-port-num
 ```
 
+# Kernel strings 
+
+```
+drivers/soc/dji/tzasc/tzc400.c
+drivers/soc/dji/tzasc/eagle_tzasc.c
+```
+ARM® CoreLink™ TZC-400 TrustZone® Address Space Controller Technical Reference Manual - http://infocenter.arm.com/help/index.jsp?topic=/com.arm.doc.ddi0504c/index.html
+
+```
+linaro,optee-tz
+3%s: can't find 'dji,optee_ramconsole' compatible
+```
+
